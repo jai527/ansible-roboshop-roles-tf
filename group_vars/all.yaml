@@ -1,15 +1,15 @@
 ansible_user: ec2-user
-ansible_password: DevOps
+ansible_password: "{{ env }}"Ops
 
 ansible_users: ec2-user
-ansible_password: DevOps321
-Mongodb_Host: mongodb-dev.jai01.online   
-Catalogue_Host: catalogue-dev.jai01.online
-Redis_Host: redis-dev.jai01.online
-User_Host: user-dev.jai01.online
-Cart_Host: cart-dev.jai01.online
-Mysql_Host: mysql-dev.jai01.online
-Shipping_Host: shipping-dev.jai01.online
-Payment_Host: Payment-dev.jai01.online
-frontend_Host: frontend-dev.jai01.online
-Rabbitmq_Host: rabbitmq-dev.jai01.online
+ansible_password: "{{ env }}"Ops321
+Mongodb_Host: mongodb-"{{ env }}".jai01.online   
+Catalogue_Host: catalogue-"{{ env }}".jai01.online
+Redis_Host: redis-"{{ env }}".jai01.online
+User_Host: user-"{{ env }}".jai01.online
+Cart_Host: cart-"{{ env }}".jai01.online
+Mysql_Host: mysql-"{{ env }}".jai01.online
+Shipping_Host: shipping-"{{ env }}".jai01.online
+Payment_Host: Payment-"{{ env }}".jai01.online
+frontend_Host: frontend-"{{ env }}".jai01.online
+Rabbitmq_Host: rabbitmq-"{{ env }}".jai01.online
