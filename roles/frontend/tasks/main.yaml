@@ -27,7 +27,6 @@
     dest: /usr/share/nginx/html
     remote_src: yes
 
-✅ FIXED PART
 - name: copy nginx config
   ansible.builtin.template:
     src: nginx.conf.j2
